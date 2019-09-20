@@ -1,0 +1,109 @@
+<!-- <h3>Find By Age</h3>
+<div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname">Age</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="age" name="age">
+    </div>
+
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+
+<table  class="table table-bordered"    >
+  
+    <thead>
+  
+      <tr class="bg-primary">
+        
+          <th> Company ID</th>
+  
+        <th> Company Name</th>
+  
+      <th> Stock Quantity</th> 
+  
+      
+  
+        
+  
+  
+       
+  
+      </tr>
+  
+    </thead>
+  
+
+
+
+
+
+
+  <tr *ngFor="let customer of customers">
+    
+    
+
+
+    
+    <td>{{ customer.id }}</td>
+          
+    <td>{{ customer.name }}</td>
+    <td>{{ customer.age }}</td>
+  </tr>
+
+
+  
+</table> -->
+ 
+
+
+
+
+<h3>Find By Company</h3>
+<div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname">Enter Company </label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="name" name="name">
+    </div>
+
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+
+<table  class="table table-bordered"    >
+  
+    <thead>
+  
+      <tr class="bg-primary">
+        
+        <th> Item Name</th>
+  
+      <th>  Quantity</th> 
+  
+      </tr>
+  
+    </thead>
+  
+
+
+
+
+
+
+  <tr *ngFor="let item of items">
+    
+    <td>{{item.name}}</td>
+   
+    <td>{{ item.quantity }} </td>
+   
+
+  </tr>
+
+
+  
+</table>
